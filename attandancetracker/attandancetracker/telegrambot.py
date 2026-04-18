@@ -221,8 +221,8 @@ def build_attendance_text(roll, data):
             f"⚠️ <b>Attendance Data Error</b>\n\n"
             f"Roll: <b>{roll}</b>\n"
             f"Could not fetch attendance.\n"
-            f"Try again later or re-link your account."
-            f"IS GEMS WORKING...!!!"
+            f"Try again later or re-link your account. \n \n "
+            f"IS GEMS WORKING...!!! \n Probably Attendance Freezed \n LETS MEET IN NEXT SEM - DONT FORGET TO USE ME"
         )
 
     if "overall" not in data:
