@@ -1,0 +1,260 @@
+I have a working Attendance Tracker web application built with Flask (Python) and hosted on Replit.
+The backend logic for calculating attendance (attendance %, classes attended, classes skippable, classes required to reach 75%) already works perfectly.
+
+IMPORTANT RULES:
+
+- Do NOT change the core Flask logic or formulas.
+- Do NOT break existing routes or functionality.
+- Only extend features and improve the frontend, analytics, and utilities.
+- Keep the project compatible with Replit hosting.
+
+Your goal is to transform this project into a modern professional analytics dashboard with advanced student utilities.
+
+---
+
+1. MODERN DASHBOARD UI
+
+Upgrade the UI to look like a modern SaaS analytics dashboard.
+
+Requirements:
+
+- Responsive layout (mobile + desktop)
+- Sidebar navigation
+- Sticky navbar
+- Dark / Light mode toggle
+- Glassmorphism or modern card design
+- Smooth animations and hover effects
+- Animated loading skeletons
+- Dashboard widgets
+- Status badges (Safe / Warning / Critical)
+
+Use modern tools such as:
+
+- TailwindCSS or Bootstrap 5
+- Chart.js / ApexCharts for charts
+- Vanilla JS or small JS utilities
+
+---
+
+2. ADVANCED DATA VISUALIZATION
+
+Add multiple interactive charts using attendance data:
+
+- Subject attendance bar chart
+- Attendance pie chart
+- Line graph showing attendance trend
+- Radar chart comparing subject performance
+- Animated progress bars for each subject
+- Attendance risk indicator
+- Attendance heatmap
+
+Charts should be interactive and responsive.
+
+---
+
+3. SMART ATTENDANCE ANALYTICS
+
+Add intelligent insights based on the existing data:
+
+Display insights like:
+
+- Classes attended
+- Classes missed
+- Classes you can safely skip
+- Classes required to reach 75%, 80%, 90%
+- Attendance trend over time
+- Risk warning if attendance drops below 75%
+
+Example insight message:
+
+"You can skip 2 more Physics classes safely. If you skip 3 classes your attendance will fall below 75%."
+
+---
+
+4. WHAT-IF ATTENDANCE SIMULATOR
+
+Add an interactive simulator where the user can test scenarios.
+
+User inputs:
+
+- Number of classes to skip
+- Number of classes to attend
+
+The system instantly calculates:
+
+"If you skip 3 classes your attendance becomes 72.4%"
+
+This must use the existing backend logic.
+
+---
+
+5. CALENDAR ATTENDANCE VIEW
+
+Add a monthly calendar view.
+
+Each day should show attendance status:
+
+Green = Attended
+Red = Absent
+Yellow = Holiday
+Blue = Exam day
+
+Clicking a date should show subject details for that day.
+
+---
+
+6. EXPORT & DOWNLOAD FEATURES
+
+Add options to download attendance data:
+
+- Download PDF report with charts
+- Export CSV file
+- Export Excel sheet
+- Print attendance report
+- Download dashboard screenshot
+
+Use Python libraries compatible with Replit:
+
+- pandas
+- matplotlib
+- fpdf or reportlab
+
+---
+
+7. ATTENDANCE REPORT GENERATOR
+
+Generate a professional report that includes:
+
+- Student name
+- Subject-wise attendance
+- Attendance percentage
+- Charts
+- Risk indicators
+- Recommendations
+
+---
+
+8. SMART ALERT SYSTEM
+
+Display warnings such as:
+
+Safe: attendance above 80%
+Warning: attendance 75–80%
+Danger: below 75%
+
+Show banners or badges.
+
+---
+
+9. PWA MOBILE APP SUPPORT
+
+Convert the site into a Progressive Web App (PWA) so users can install it like a mobile app.
+
+Features:
+
+- Installable on phone
+- App icon
+- Offline caching
+- Splash screen
+
+---
+
+10. ADVANCED DASHBOARD UTILITIES
+
+Add helpful tools:
+
+- Search subjects
+- Filter subjects
+- Sort by attendance
+- Attendance streak tracker
+- Semester progress tracker
+- Goal tracker (example: reach 85%)
+
+Example:
+
+Goal: 85% attendance
+"You must attend 7 of the next 8 classes"
+
+---
+
+11. API ENDPOINTS
+
+Expose clean APIs for future use:
+
+/api/attendance
+/api/subjects
+/api/report
+/api/analytics
+/api/prediction
+
+These APIs will help if a mobile app is built later.
+
+---
+
+12. FEEDBACK SYSTEM WITH DISCORD WEBHOOK
+
+Add a feedback page in the dashboard.
+
+Create a feedback form with fields:
+
+- Name (optional)
+- Email (optional)
+- Feedback Type:
+  - Bug Report
+  - Feature Request
+  - Suggestion
+  - UI Feedback
+- Rating (1–5 stars)
+- Message (large textarea)
+
+When submitted:
+
+The Flask backend should send the feedback to the following Discord webhook:
+
+https://discord.com/api/webhooks/1475124992659161249/DQ9465Pjv1YDqsoVcWJ-pbwbBQ9PA4AQCE9VfUtyuxrZT9xEQkozFg2onYelBR6_7zsJ
+
+Send a formatted message like:
+
+📢 New Attendance Tracker Feedback
+
+Name: {name}
+Email: {email}
+Type: {feedback_type}
+Rating: ⭐⭐⭐⭐
+Message: {message}
+
+Time: {timestamp}
+
+---
+
+13. PROJECT STRUCTURE
+
+Keep the project organized:
+
+templates/
+
+- dashboard.html
+- analytics.html
+- simulator.html
+- feedback.html
+
+static/
+
+- css/
+- js/
+- images/
+
+---
+
+14. PERFORMANCE OPTIMIZATION
+
+- Use AJAX / fetch API to load data
+- Avoid full page reloads
+- Add loading animations
+- Cache static resources
+
+---
+
+FINAL GOAL
+
+Transform the simple Flask attendance tracker into a modern professional analytics platform for students, similar to tools like Notion dashboards or Vercel analytics, while keeping the existing attendance logic intact.
