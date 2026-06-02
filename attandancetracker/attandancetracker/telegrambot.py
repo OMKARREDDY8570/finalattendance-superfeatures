@@ -21,10 +21,10 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 app.secret_key = os.getenv("SESSION_SECRET", "mits_secret_key_2024_xK9pL3")
 app.config["SESSION_PERMANENT"] = False
-ADMIN_SESSION_TIMEOUT = 7200
+ADMIN_SESSION_TIMEOUT = 3600
 
-ADMIN_USER = "admin"
-ADMIN_PASS = "Apac/ptp1cob"
+ADMIN_USER = os.getenv("ADMIN_USER")
+ADMIN_PASS = os.getenv("ADMIN_PASS")
 
 DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1495123304564920410/5MsyIRVI35vjE97abjdeK0CfYQRDsHbsCesmsHu9I7eWnYORnZSMecjbYXyduCzjtD1t"
 
